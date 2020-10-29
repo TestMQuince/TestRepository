@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dusan\\Desktop\\CI-CD\\TestRepository\\MQuince\\MQuince.WebAPI\\MQuince.WebAPI.csproj": {}
+    "C:\\Users\\Dusan\\Desktop\\CICD\\TestRepository\\MQuince\\MQuince.WebAPI\\MQuince.WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dusan\\Desktop\\CI-CD\\TestRepository\\MQuince\\MQuince.WebAPI\\MQuince.WebAPI.csproj": {
+    "C:\\Users\\Dusan\\Desktop\\CICD\\TestRepository\\MQuince\\MQuince.WebAPI\\MQuince.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dusan\\Desktop\\CI-CD\\TestRepository\\MQuince\\MQuince.WebAPI\\MQuince.WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Dusan\\Desktop\\CICD\\TestRepository\\MQuince\\MQuince.WebAPI\\MQuince.WebAPI.csproj",
         "projectName": "MQuince.WebAPI",
-        "projectPath": "C:\\Users\\Dusan\\Desktop\\CI-CD\\TestRepository\\MQuince\\MQuince.WebAPI\\MQuince.WebAPI.csproj",
+        "projectPath": "C:\\Users\\Dusan\\Desktop\\CICD\\TestRepository\\MQuince\\MQuince.WebAPI\\MQuince.WebAPI.csproj",
         "packagesPath": "C:\\Users\\Dusan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dusan\\Desktop\\CI-CD\\TestRepository\\MQuince\\MQuince.WebAPI\\obj\\",
+        "outputPath": "C:\\Users\\Dusan\\Desktop\\CICD\\TestRepository\\MQuince\\MQuince.WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dusan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,4 +65,5 @@
         }
       }
     }
- 
+  }
+}
