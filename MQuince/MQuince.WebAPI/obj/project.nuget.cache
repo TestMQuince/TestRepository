@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "h2C8QK4deYa6PTkhEFimQeJWyD0RgvqaZStl9PjmG7+005a52okGUNJRY6vukH5VCwrae7LnTYiETnjXDC5s/g==",
+  "dgSpecHash": "WockB8IbOUg29u8CbFmXKkYLG85YHt3s86gCjcZJRt0o/UHHYqXWUd+Eqo6tt/qQTgpl8qy9/Pfsz/pzhiljnw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dusan\\Desktop\\CI-CD\\TestRepository\\MQuince\\MQuince.WebAPI\\MQuince.WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\Dusan\\Desktop\\CICD\\TestRepository\\MQuince\\MQuince.WebAPI\\MQuince.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dusan\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
   ],
   "logs": []
+}
