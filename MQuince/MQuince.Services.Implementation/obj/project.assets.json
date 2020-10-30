@@ -1,0 +1,150 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "MQuince.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "MQuince.Enums": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MQuince.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MQuince.Entities.dll": {}
+        }
+      },
+      "MQuince.Enums/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/MQuince.Enums.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MQuince.Enums.dll": {}
+        }
+      },
+      "MQuince.Repository.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "MQuince.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MQuince.Repository.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MQuince.Repository.Contracts.dll": {}
+        }
+      },
+      "MQuince.Services.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "MQuince.Enums": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MQuince.Services.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MQuince.Services.Contracts.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MQuince.Entities/1.0.0": {
+      "type": "project",
+      "path": "../MQuince.Entities/MQuince.Entities.csproj",
+      "msbuildProject": "../MQuince.Entities/MQuince.Entities.csproj"
+    },
+    "MQuince.Enums/1.0.0": {
+      "type": "project",
+      "path": "../MQuince.Enums/MQuince.Enums.csproj",
+      "msbuildProject": "../MQuince.Enums/MQuince.Enums.csproj"
+    },
+    "MQuince.Repository.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../MQuince.Repository.Contracts/MQuince.Repository.Contracts.csproj",
+      "msbuildProject": "../MQuince.Repository.Contracts/MQuince.Repository.Contracts.csproj"
+    },
+    "MQuince.Services.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../MQuince.Services.Contracts/MQuince.Services.Contracts.csproj",
+      "msbuildProject": "../MQuince.Services.Contracts/MQuince.Services.Contracts.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "MQuince.Entities >= 1.0.0",
+      "MQuince.Repository.Contracts >= 1.0.0",
+      "MQuince.Services.Contracts >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\helen\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\helen\\source\\repos\\MQuince\\MQuince.Services.Implementation\\MQuince.Services.Implementation.csproj",
+      "projectName": "MQuince.Services.Implementation",
+      "projectPath": "C:\\Users\\helen\\source\\repos\\MQuince\\MQuince.Services.Implementation\\MQuince.Services.Implementation.csproj",
+      "packagesPath": "C:\\Users\\helen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\helen\\source\\repos\\MQuince\\MQuince.Services.Implementation\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\helen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\Users\\helen\\source\\repos\\MQuince\\MQuince.Entities\\MQuince.Entities.csproj": {
+              "projectPath": "C:\\Users\\helen\\source\\repos\\MQuince\\MQuince.Entities\\MQuince.Entities.csproj"
+            },
+            "C:\\Users\\helen\\source\\repos\\MQuince\\MQuince.Repository.Contracts\\MQuince.Repository.Contracts.csproj": {
+              "projectPath": "C:\\Users\\helen\\source\\repos\\MQuince\\MQuince.Repository.Contracts\\MQuince.Repository.Contracts.csproj"
+            },
+            "C:\\Users\\helen\\source\\repos\\MQuince\\MQuince.Services.Contracts\\MQuince.Services.Contracts.csproj": {
+              "projectPath": "C:\\Users\\helen\\source\\repos\\MQuince\\MQuince.Services.Contracts\\MQuince.Services.Contracts.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
