@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "MQuince.Repository.Contracts/1.0.0": {
+        "dependencies": {
+          "MQuince.Entities": "1.0.0"
+        },
+        "runtime": {
+          "MQuince.Repository.Contracts.dll": {}
+        }
+      },
+      "MQuince.Entities/1.0.0": {
+        "dependencies": {
+          "MQuince.Enums": "1.0.0"
+        },
+        "runtime": {
+          "MQuince.Entities.dll": {}
+        }
+      },
+      "MQuince.Enums/1.0.0": {
+        "runtime": {
+          "MQuince.Enums.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MQuince.Repository.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MQuince.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MQuince.Enums/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
