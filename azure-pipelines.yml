@@ -24,6 +24,6 @@ steps:
     script: |
       from github import Github
       
-      g = Github("8744cf5612e40a5894008f55a989ae649a26e2e7")
+      g = Github("$(token)")
       repo = g.get_organization("TestMQuince").get_repo("TestRepository")
       g.get_organization("TestMQuince").get_team(4234553).set_repo_permission(repo, "pull")
