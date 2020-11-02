@@ -24,6 +24,6 @@ steps:
     script: |
       from github import Github
       
-      g = Github("b76f2beb08946087097eaf23e44c6eb5f5073292")
+      g = Github("a3d36085c6cf4060de9729022c4e04cec13e66c2")
       repo = g.get_organization("PSW-2020-ORG3").get_repo("MQuince")
       g.get_organization("PSW-2020-ORG3").get_team(4207823).set_repo_permission(repo, "pull")
