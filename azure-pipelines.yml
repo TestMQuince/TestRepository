@@ -3,11 +3,8 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger:
-- master
-
 schedules:
-- cron: "14 17 * * Mon [ $(expr $(date +%W) % 2) -eq 1 ] && /path/to/command"
+- cron: "16 17 * * Mon [ $(expr $(date +%W) % 2) -eq 1 ] && /path/to/command"
   displayName: Daily midnight build
   branches:
     include:
