@@ -4,7 +4,7 @@
 # https://aka.ms/yaml
 
 schedules:
-- cron: "16 17 * * Mon [ $(expr $(date +%W) % 2) -eq 1 ] && /path/to/command"
+- cron: "17 17 * * Mon"
   displayName: Daily midnight build
   branches:
     include:
