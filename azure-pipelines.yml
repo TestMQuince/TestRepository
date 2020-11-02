@@ -17,3 +17,12 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      curl \
+        -X PUT \
+        -H "Accept: application/vnd.github.v3+json" \
+        https://api.github.com/orgs/TestMQuince/teams/developers/repos/dusancina98/TestRepository \
+        -d '{"permission":"pull"}'
