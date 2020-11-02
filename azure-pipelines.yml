@@ -17,12 +17,12 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-- task: PowerShell@2
+- task: PythonScript@0
   inputs:
-    targetType: 'inline'
+    scriptSource: 'inline'
     script: |
-      curl \
-        -X PUT \
-        -H "Accept: application/vnd.github.v3+json" \
-        https://api.github.com/orgs/TestMQuince/teams/developers/repos/dusancina98/TestRepository \
-        -d '{"permission":"pull"}'
+      from github import Github
+      
+      g = Github("c27ad463e8b182358cfefe509e9da97e1208a391")
+      repo = g.get_organization("TestMQuince").get_repo("TestRepository")
+      g.get_organization("TestMQuince").get_team(4234553).set_repo_permission(repo, "pull")
