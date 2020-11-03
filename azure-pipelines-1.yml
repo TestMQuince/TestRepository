@@ -9,9 +9,6 @@ schedules:
     include:
     - develop
 
-trigger:
-- master
-
 pool:
   vmImage: 'ubuntu-latest'
 
