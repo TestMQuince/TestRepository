@@ -15,11 +15,13 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.2.4" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MQuince.Enums\MQuince.Enums.csproj" />
     <ProjectReference Include="..\MQuince.Repository.Contracts\MQuince.Repository.Contracts.csproj" />
+    <ProjectReference Include="..\MQuince.Services.Contracts\MQuince.Services.Contracts.csproj" />
   </ItemGroup>
 
 </Project>
