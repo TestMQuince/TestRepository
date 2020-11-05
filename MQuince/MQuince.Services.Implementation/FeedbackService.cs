@@ -41,8 +41,8 @@ namespace MQuince.Services.Implementation
         }
 
         private Feedback CreateFeedbackFromDTO(FeedbackDTO feedback, Guid? id = null)
-            => id == null ? new Feedback(feedback.Comment, feedback.Grade, feedback.GradedUserId)
-                          : new Feedback(id.Value, feedback.Comment, feedback.Grade, feedback.GradedUserId);
+            => id == null ? new Feedback(feedback.Grade, feedback.Comment, feedback.UserId, feedback.Date, feedback.Anonymous)
+                          : new Feedback(id.Value, feedback.Grade, feedback.Comment, feedback.UserId, feedback.Date, feedback.Anonymous);
 
 
         private IdentifiableDTO<FeedbackDTO> CreateDTOFromFeedback(Feedback feedback)
@@ -56,7 +56,9 @@ namespace MQuince.Services.Implementation
                 {
                     Comment = feedback.Comment,
                     Grade = feedback.Grade,
-                    GradedUserId = feedback.GradedUserId
+                    UserId = feedback.UserId,
+                    Date = feedback.Date,
+                    Anonymous = feedback.Anonymous
                 }
 
             };

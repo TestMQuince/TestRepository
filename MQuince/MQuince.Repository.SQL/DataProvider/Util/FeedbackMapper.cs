@@ -13,7 +13,7 @@ namespace MQuince.Repository.SQL.DataProvider.Util
         {
             if (feedback == null) return null;
 
-            return new Feedback(feedback.Id, feedback.Comment, feedback.Grade, feedback.GradedUserId);
+            return new Feedback(feedback.Id, feedback.Grade, feedback.Comment, feedback.UserId, feedback.Date, feedback.Anonymous);
 
         }
 
@@ -21,7 +21,7 @@ namespace MQuince.Repository.SQL.DataProvider.Util
         {
             if (feedback == null) return null;
 
-            FeedbackPersistence retVal = new FeedbackPersistence() { Id = feedback.Id, GradedUserId = feedback.GradedUserId, Grade = feedback.Grade, Comment = feedback.Comment };
+            FeedbackPersistence retVal = new FeedbackPersistence() { Id = feedback.Id, UserId = feedback.UserId, Grade = feedback.Grade, Comment = feedback.Comment, Date = feedback.Date, Anonymous = feedback.Anonymous };
             return retVal;
         }
 

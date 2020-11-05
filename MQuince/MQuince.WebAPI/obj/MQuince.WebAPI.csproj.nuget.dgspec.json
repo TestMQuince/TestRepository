@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\helen\\source\\repos\\MQuince\\MQuince.WebAPI\\MQuince.WebAPI.csproj": {}
+    "C:\\Users\\helen\\Desktop\\ZaKomitovanje\\TestRepository\\TestRepository\\TestRepository\\MQuince\\MQuince.WebAPI\\MQuince.WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\helen\\source\\repos\\MQuince\\MQuince.WebAPI\\MQuince.WebAPI.csproj": {
+    "C:\\Users\\helen\\Desktop\\ZaKomitovanje\\TestRepository\\TestRepository\\TestRepository\\MQuince\\MQuince.WebAPI\\MQuince.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\helen\\source\\repos\\MQuince\\MQuince.WebAPI\\MQuince.WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\helen\\Desktop\\ZaKomitovanje\\TestRepository\\TestRepository\\TestRepository\\MQuince\\MQuince.WebAPI\\MQuince.WebAPI.csproj",
         "projectName": "MQuince.WebAPI",
-        "projectPath": "C:\\Users\\helen\\source\\repos\\MQuince\\MQuince.WebAPI\\MQuince.WebAPI.csproj",
+        "projectPath": "C:\\Users\\helen\\Desktop\\ZaKomitovanje\\TestRepository\\TestRepository\\TestRepository\\MQuince\\MQuince.WebAPI\\MQuince.WebAPI.csproj",
         "packagesPath": "C:\\Users\\helen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\helen\\source\\repos\\MQuince\\MQuince.WebAPI\\obj\\",
+        "outputPath": "C:\\Users\\helen\\Desktop\\ZaKomitovanje\\TestRepository\\TestRepository\\TestRepository\\MQuince\\MQuince.WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\helen\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,6 +37,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "VueCliMiddleware": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

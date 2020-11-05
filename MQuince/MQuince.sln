@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MQuince.Services.Contracts", "MQuince.Services.Contracts\MQuince.Services.Contracts.csproj", "{EE835B5F-8FA1-4AB2-987A-E8CD8931AA59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MQuince.Services.Contracts", "MQuince.Services.Contracts\MQuince.Services.Contracts.csproj", "{EE835B5F-8FA1-4AB2-987A-E8CD8931AA59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MQuince.Enums", "MQuince.Enums\MQuince.Enums.csproj", "{B66F6FE1-1934-4008-B0BA-52E90E65FCA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MQuince.Enums", "MQuince.Enums\MQuince.Enums.csproj", "{B66F6FE1-1934-4008-B0BA-52E90E65FCA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MQuince.Entities", "MQuince.Entities\MQuince.Entities.csproj", "{E06E7370-018B-40CD-B92A-22D5BFDC94E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MQuince.Entities", "MQuince.Entities\MQuince.Entities.csproj", "{E06E7370-018B-40CD-B92A-22D5BFDC94E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MQuince.Services.Implementation", "MQuince.Services.Implementation\MQuince.Services.Implementation.csproj", "{DD8415D2-DE35-4E07-BC8E-A3DBE9E45EB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MQuince.Services.Implementation", "MQuince.Services.Implementation\MQuince.Services.Implementation.csproj", "{DD8415D2-DE35-4E07-BC8E-A3DBE9E45EB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MQuince.Repository.Contracts", "MQuince.Repository.Contracts\MQuince.Repository.Contracts.csproj", "{FEF6517D-58F1-40AB-B5D1-CF8DE80D68AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MQuince.Repository.Contracts", "MQuince.Repository.Contracts\MQuince.Repository.Contracts.csproj", "{FEF6517D-58F1-40AB-B5D1-CF8DE80D68AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MQuince.Repository.SQL", "MQuince.Repository.SQL\MQuince.Repository.SQL.csproj", "{68B7782B-9D57-43B0-A5B5-194CF1B27F25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MQuince.Repository.SQL", "MQuince.Repository.SQL\MQuince.Repository.SQL.csproj", "{68B7782B-9D57-43B0-A5B5-194CF1B27F25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MQuince.WebAPI", "MQuince.WebAPI\MQuince.WebAPI.csproj", "{86ABF846-A2FD-4EE1-BB38-83CB0CDC1130}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MQuince.WebAPI", "MQuince.WebAPI\MQuince.WebAPI.csproj", "{F6412FA2-6B3B-47FF-A49D-6344E9BCD43B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +47,10 @@ Global
 		{68B7782B-9D57-43B0-A5B5-194CF1B27F25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68B7782B-9D57-43B0-A5B5-194CF1B27F25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68B7782B-9D57-43B0-A5B5-194CF1B27F25}.Release|Any CPU.Build.0 = Release|Any CPU
-		{86ABF846-A2FD-4EE1-BB38-83CB0CDC1130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{86ABF846-A2FD-4EE1-BB38-83CB0CDC1130}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{86ABF846-A2FD-4EE1-BB38-83CB0CDC1130}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{86ABF846-A2FD-4EE1-BB38-83CB0CDC1130}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6412FA2-6B3B-47FF-A49D-6344E9BCD43B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6412FA2-6B3B-47FF-A49D-6344E9BCD43B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6412FA2-6B3B-47FF-A49D-6344E9BCD43B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6412FA2-6B3B-47FF-A49D-6344E9BCD43B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
