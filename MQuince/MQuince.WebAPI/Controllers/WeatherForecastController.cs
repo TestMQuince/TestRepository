@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using MQuince.Entities.Drug;
+using MQuince.Repository.SQL;
 
 namespace MQuince.WebAPI.Controllers
 {
@@ -34,6 +36,15 @@ namespace MQuince.WebAPI.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+
+        [HttpGet("proba")]
+        public IEnumerable<Allergen> Proba()
+        {
+            AllergenRepository ar = new AllergenRepository();
+            ar.Create(new Allergen("Kikiriki"));
+            return ar.GetAll();
         }
     }
 }

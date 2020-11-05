@@ -1,0 +1,17 @@
+﻿<html>
+<head>
+    <title>Proba</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Dobro dosli!</h1>
+        <p v-on:click="f">{{message}}</p>
+        <p v-for="a in als">
+            {{a.name}}
+        </p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
+    <script src="../axios.js"></script>
+    <script src="AddFeedback.js"></script>
+</body>
+</html>
