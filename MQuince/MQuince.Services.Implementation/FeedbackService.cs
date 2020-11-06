@@ -12,11 +12,14 @@ namespace MQuince.Services.Implementation
 {
     public class FeedbackService : IFeedbackService
     {
-        private readonly IFeedbackRepository _feedbackRepository;
+        public IFeedbackRepository _feedbackRepository;
         public FeedbackService(IFeedbackRepository feedbackRepository)
         {
             _feedbackRepository = feedbackRepository;
         }
+
+       
+
         public Guid Create(FeedbackDTO entityDTO)
         {
             Feedback feedback = CreateFeedbackFromDTO(entityDTO);
@@ -41,8 +44,8 @@ namespace MQuince.Services.Implementation
         }
 
         private Feedback CreateFeedbackFromDTO(FeedbackDTO feedback, Guid? id = null)
-            => id == null ? new Feedback(feedback.Grade, feedback.Comment, feedback.UserId, feedback.Date, feedback.Anonymous)
-                          : new Feedback(id.Value, feedback.Grade, feedback.Comment, feedback.UserId, feedback.Date, feedback.Anonymous);
+            => id == null ? new Feedback(feedback.Comment, feedback.UserId, feedback.Anonymous, feedback.Publish)
+                          : new Feedback(id.Value, feedback.Comment, feedback.UserId, feedback.Anonymous, feedback.Publish);
 
 
         private IdentifiableDTO<FeedbackDTO> CreateDTOFromFeedback(Feedback feedback)
@@ -55,10 +58,9 @@ namespace MQuince.Services.Implementation
                 EntityDTO = new FeedbackDTO()
                 {
                     Comment = feedback.Comment,
-                    Grade = feedback.Grade,
                     UserId = feedback.UserId,
-                    Date = feedback.Date,
-                    Anonymous = feedback.Anonymous
+                    Anonymous = feedback.Anonymous,
+                    Publish = feedback.Publish
                 }
 
             };

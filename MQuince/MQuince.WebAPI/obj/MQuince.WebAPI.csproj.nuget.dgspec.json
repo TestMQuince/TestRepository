@@ -4,6 +4,71 @@
     "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.WebAPI\\MQuince.WebAPI.csproj": {}
   },
   "projects": {
+    "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Application\\MQuince.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Application\\MQuince.Application.csproj",
+        "projectName": "MQuince.Application",
+        "projectPath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Application\\MQuince.Application.csproj",
+        "packagesPath": "C:\\Users\\helen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\helen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Repository.Contracts\\MQuince.Repository.Contracts.csproj": {
+                "projectPath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Repository.Contracts\\MQuince.Repository.Contracts.csproj"
+              },
+              "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Repository.SQL\\MQuince.Repository.SQL.csproj": {
+                "projectPath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Repository.SQL\\MQuince.Repository.SQL.csproj"
+              },
+              "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Contracts\\MQuince.Services.Contracts.csproj": {
+                "projectPath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Contracts\\MQuince.Services.Contracts.csproj"
+              },
+              "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Implementation\\MQuince.Services.Implementation.csproj": {
+                "projectPath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Implementation\\MQuince.Services.Implementation.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Entities\\MQuince.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -321,6 +386,68 @@
         }
       }
     },
+    "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Implementation\\MQuince.Services.Implementation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Implementation\\MQuince.Services.Implementation.csproj",
+        "projectName": "MQuince.Services.Implementation",
+        "projectPath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Implementation\\MQuince.Services.Implementation.csproj",
+        "packagesPath": "C:\\Users\\helen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Implementation\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\helen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Entities\\MQuince.Entities.csproj": {
+                "projectPath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Entities\\MQuince.Entities.csproj"
+              },
+              "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Repository.Contracts\\MQuince.Repository.Contracts.csproj": {
+                "projectPath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Repository.Contracts\\MQuince.Repository.Contracts.csproj"
+              },
+              "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Contracts\\MQuince.Services.Contracts.csproj": {
+                "projectPath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Contracts\\MQuince.Services.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.WebAPI\\MQuince.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -344,6 +471,9 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+              "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Application\\MQuince.Application.csproj": {
+                "projectPath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Application\\MQuince.Application.csproj"
+              },
               "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Entities\\MQuince.Entities.csproj": {
                 "projectPath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Entities\\MQuince.Entities.csproj"
               },
@@ -352,6 +482,12 @@
               },
               "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Repository.SQL\\MQuince.Repository.SQL.csproj": {
                 "projectPath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Repository.SQL\\MQuince.Repository.SQL.csproj"
+              },
+              "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Contracts\\MQuince.Services.Contracts.csproj": {
+                "projectPath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Contracts\\MQuince.Services.Contracts.csproj"
+              },
+              "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Implementation\\MQuince.Services.Implementation.csproj": {
+                "projectPath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Implementation\\MQuince.Services.Implementation.csproj"
               }
             }
           }
@@ -365,6 +501,16 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
             "VueCliMiddleware": {
               "target": "Package",
               "version": "[3.0.0, )"

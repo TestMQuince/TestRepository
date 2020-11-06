@@ -39,12 +39,5 @@ namespace MQuince.WebAPI.Controllers
         }
 
 
-        [HttpGet("proba")]
-        public IEnumerable<Allergen> Proba()
-        {
-            AllergenRepository ar = new AllergenRepository();
-            ar.Create(new Allergen("Kikiriki"));
-            return ar.GetAll();
-        }
     }
 }

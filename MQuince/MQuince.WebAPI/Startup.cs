@@ -9,6 +9,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using MQuince.Application;
+using MQuince.Services.Contracts.Interfaces;
 using VueCliMiddleware;
 
 namespace MQuince.WebAPI
@@ -25,6 +27,11 @@ namespace MQuince.WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            App application = new App(Configuration);
+
+            services.AddTransient(typeof(IUserService), s => application.GetUserService());
+            services.AddTransient(typeof(IFeedbackService), s => application.GetFeedbackService());
+
             services.AddControllers();
             services.AddSpaStaticFiles(configuration =>
             {

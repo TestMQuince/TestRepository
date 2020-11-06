@@ -1,4 +1,5 @@
-﻿using MQuince.Entities.Drug;
+﻿using Microsoft.EntityFrameworkCore;
+using MQuince.Entities.Drug;
 using MQuince.Repository.Contracts;
 using MQuince.Repository.SQL.DataAccess;
 using MQuince.Repository.SQL.DataProvider.Util;
@@ -12,6 +13,12 @@ namespace MQuince.Repository.SQL
 {
     public class AllergenRepository : IAllergenRepository
     {
+        private readonly DbContextOptions _dbContext;
+
+        public AllergenRepository(DbContextOptionsBuilder optionsBuilders)
+        {
+            _dbContext = optionsBuilders == null ? throw new ArgumentNullException(nameof(optionsBuilders) + "is set to null") : optionsBuilders.Options;
+        }
         public void Create(Allergen entity)
         {
             using (MQuinceDbContext _context = new MQuinceDbContext())

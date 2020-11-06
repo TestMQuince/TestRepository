@@ -1,21 +1,20 @@
 ﻿var app = new Vue({
-	el: '#app',
+	el: '#addFeedback',
 	data: {
-		message: 'Hello Vue!',
-		als: []
+		Comment: "",
+		Anonymous: false,
+		Publish: true
 	},
 	methods: {
-		f: function () {
-			this.message = 'funkcija'
+		submit() {
 			axios
-				.get('/weatherforecast/proba')
-				.then(response => {
-					this.als = response.data
-					console.log(this.als)
-				});
-		}
-	},
-	created() {
-		this.message = 'Ipak nista'
+				.post("/api/Feedback", {
+					Comment: this.Comment,
+					Anonymous: this.Anonymous,
+					Publish: this.Publish
+				}).then(response => {
+					console.log("cao")
+				})
+        }
 	}
 })
