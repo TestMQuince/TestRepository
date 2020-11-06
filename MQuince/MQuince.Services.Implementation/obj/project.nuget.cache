@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TAvqQqrEJMw4KMZrxm8esPP9QcRbA3JRS/QKMvb5z85Xr6ie13tjukUHm6t7pbdEkvY5T05xppm5ymWMBlcvQw==",
+  "dgSpecHash": "lQKpptDHZwunUa7uXozTKvRqtaLX9xTCl9ArKOUEGylIHRBcSRY2xM2wKInl+Ff6QeNscGrGwIZ4n1aGiB4/3w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\helen\\Desktop\\ZaKomitovanje\\TestRepository\\TestRepository\\TestRepository\\MQuince\\MQuince.Services.Implementation\\MQuince.Services.Implementation.csproj",
+  "projectFilePath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Implementation\\MQuince.Services.Implementation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\helen\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\helen\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

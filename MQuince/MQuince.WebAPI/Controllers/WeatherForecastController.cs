@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using MQuince.Entities.Drug;
+using MQuince.Repository.SQL;
 
 namespace MQuince.WebAPI.Controllers
 {
@@ -35,5 +37,7 @@ namespace MQuince.WebAPI.Controllers
             })
             .ToArray();
         }
+
+
     }
 }

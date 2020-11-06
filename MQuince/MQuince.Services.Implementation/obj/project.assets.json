@@ -715,11 +715,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\helen\\Desktop\\ZaKomitovanje\\TestRepository\\TestRepository\\TestRepository\\MQuince\\MQuince.Services.Implementation\\MQuince.Services.Implementation.csproj",
+      "projectUniqueName": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Implementation\\MQuince.Services.Implementation.csproj",
       "projectName": "MQuince.Services.Implementation",
-      "projectPath": "C:\\Users\\helen\\Desktop\\ZaKomitovanje\\TestRepository\\TestRepository\\TestRepository\\MQuince\\MQuince.Services.Implementation\\MQuince.Services.Implementation.csproj",
+      "projectPath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Implementation\\MQuince.Services.Implementation.csproj",
       "packagesPath": "C:\\Users\\helen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\helen\\Desktop\\ZaKomitovanje\\TestRepository\\TestRepository\\TestRepository\\MQuince\\MQuince.Services.Implementation\\obj\\",
+      "outputPath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Implementation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\helen\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -735,14 +735,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\helen\\Desktop\\ZaKomitovanje\\TestRepository\\TestRepository\\TestRepository\\MQuince\\MQuince.Entities\\MQuince.Entities.csproj": {
-              "projectPath": "C:\\Users\\helen\\Desktop\\ZaKomitovanje\\TestRepository\\TestRepository\\TestRepository\\MQuince\\MQuince.Entities\\MQuince.Entities.csproj"
+            "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Entities\\MQuince.Entities.csproj": {
+              "projectPath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Entities\\MQuince.Entities.csproj"
             },
-            "C:\\Users\\helen\\Desktop\\ZaKomitovanje\\TestRepository\\TestRepository\\TestRepository\\MQuince\\MQuince.Repository.Contracts\\MQuince.Repository.Contracts.csproj": {
-              "projectPath": "C:\\Users\\helen\\Desktop\\ZaKomitovanje\\TestRepository\\TestRepository\\TestRepository\\MQuince\\MQuince.Repository.Contracts\\MQuince.Repository.Contracts.csproj"
+            "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Repository.Contracts\\MQuince.Repository.Contracts.csproj": {
+              "projectPath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Repository.Contracts\\MQuince.Repository.Contracts.csproj"
             },
-            "C:\\Users\\helen\\Desktop\\ZaKomitovanje\\TestRepository\\TestRepository\\TestRepository\\MQuince\\MQuince.Services.Contracts\\MQuince.Services.Contracts.csproj": {
-              "projectPath": "C:\\Users\\helen\\Desktop\\ZaKomitovanje\\TestRepository\\TestRepository\\TestRepository\\MQuince\\MQuince.Services.Contracts\\MQuince.Services.Contracts.csproj"
+            "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Contracts\\MQuince.Services.Contracts.csproj": {
+              "projectPath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Contracts\\MQuince.Services.Contracts.csproj"
             }
           }
         }

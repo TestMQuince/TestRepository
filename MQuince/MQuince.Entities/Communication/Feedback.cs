@@ -2,6 +2,7 @@
 using MQuince.Enums;
 using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 namespace MQuince.Entities
@@ -9,24 +10,21 @@ namespace MQuince.Entities
     public class Feedback
     {
         private Guid _id;
-        public Grade Grade { get; set; }
         public string Comment { get; set; }
         public Guid UserId { get; set; }
-        public DateTime Date { get; set; }
         public bool Anonymous { get; set; }
-
-        public Feedback(Guid id, Grade grade, string comment, Guid userId, DateTime date, bool anonymous)
+        public bool Publish { get; set; }
+        public Feedback(Guid id, string comment, Guid userId, bool anonymous, bool publish)
         {
             Id = id;
             Comment = comment;
-            Grade = grade;
             UserId = userId;
-            Date = date;
             Anonymous = anonymous;
+            Publish = publish;
         }
 
-        public Feedback(Grade grade, string comment, Guid userId, DateTime date, bool anonymous)
-            : this(Guid.NewGuid(), grade, comment, userId, date, anonymous)
+        public Feedback(string comment, Guid userId, bool anonymous, bool publish)
+            : this(Guid.NewGuid(), comment, userId, anonymous, publish)
         {
         }
 

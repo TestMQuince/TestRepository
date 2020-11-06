@@ -1,4 +1,5 @@
-﻿using MQuince.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using MQuince.Entities;
 using MQuince.Repository.Contracts;
 using MQuince.Repository.SQL.DataAccess;
 using MQuince.Repository.SQL.DataProvider.Util;
@@ -12,6 +13,12 @@ namespace MQuince.Repository.SQL.DataProvider
 {
     public class UserRepository : IUserRepository
     {
+        private readonly DbContextOptions _dbContext;
+
+        public UserRepository(DbContextOptionsBuilder optionsBuilders)
+        {
+            _dbContext = optionsBuilders == null ? throw new ArgumentNullException(nameof(optionsBuilders) + "is set to null") : optionsBuilders.Options;
+        }
         public IEnumerable<User> GetAll()
         {
             using (MQuinceDbContext _context = new MQuinceDbContext())

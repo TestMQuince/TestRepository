@@ -98,13 +98,11 @@ namespace MQuince.Repository.SQL.Migrations
                         .HasColumnType("tinyint(1)");
 
                     b.Property<string>("Comment")
+                        .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<int>("Grade")
-                        .HasColumnType("int");
+                    b.Property<bool>("Publish")
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<Guid>("UserId")
                         .HasColumnType("char(36)");

@@ -1,4 +1,5 @@
-﻿using MQuince.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using MQuince.Entities;
 using MQuince.Repository.Contracts;
 using MQuince.Repository.SQL.DataAccess;
 using MQuince.Repository.SQL.DataProvider.Util;
@@ -12,6 +13,12 @@ namespace MQuince.Repository.SQL.DataProvider
 {
     public class FeedbackRepository : IFeedbackRepository
     {
+        private readonly DbContextOptions _dbContext;
+
+        public FeedbackRepository(DbContextOptionsBuilder optionsBuilders)
+        {
+            _dbContext = optionsBuilders == null ? throw new ArgumentNullException(nameof(optionsBuilders) + "is set to null") : optionsBuilders.Options;
+        }
         public void Create(Feedback entity)
         {
             using (MQuinceDbContext _context = new MQuinceDbContext())
