@@ -68,5 +68,13 @@ namespace MQuince.Repository.SQL.DataProvider
                 _context.SaveChanges(); //moramo sacuvati promene
             }
         }
+
+        public IEnumerable<Feedback> GetByStatus(bool publish)
+        {
+            using (MQuinceDbContext _context = new MQuinceDbContext())
+            {
+                return FeedbackMapper.MapFeedbackPersistenceCollectionToFeedbackEntityCollection(_context.Feedbacks.Where(p => p.Publish == publish).ToList());
+            }
+        }
     }
 }

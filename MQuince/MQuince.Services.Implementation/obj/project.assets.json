@@ -710,19 +710,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\helen\\.nuget\\packages\\": {}
+    "C:\\Users\\nikol\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Implementation\\MQuince.Services.Implementation.csproj",
+      "projectUniqueName": "C:\\Users\\nikol\\OneDrive\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Implementation\\MQuince.Services.Implementation.csproj",
       "projectName": "MQuince.Services.Implementation",
-      "projectPath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Implementation\\MQuince.Services.Implementation.csproj",
-      "packagesPath": "C:\\Users\\helen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Implementation\\obj\\",
+      "projectPath": "C:\\Users\\nikol\\OneDrive\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Implementation\\MQuince.Services.Implementation.csproj",
+      "packagesPath": "C:\\Users\\nikol\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nikol\\OneDrive\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Implementation\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\helen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nikol\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -735,14 +739,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Entities\\MQuince.Entities.csproj": {
-              "projectPath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Entities\\MQuince.Entities.csproj"
+            "C:\\Users\\nikol\\OneDrive\\Desktop\\TestRepository\\MQuince\\MQuince.Entities\\MQuince.Entities.csproj": {
+              "projectPath": "C:\\Users\\nikol\\OneDrive\\Desktop\\TestRepository\\MQuince\\MQuince.Entities\\MQuince.Entities.csproj"
             },
-            "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Repository.Contracts\\MQuince.Repository.Contracts.csproj": {
-              "projectPath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Repository.Contracts\\MQuince.Repository.Contracts.csproj"
+            "C:\\Users\\nikol\\OneDrive\\Desktop\\TestRepository\\MQuince\\MQuince.Repository.Contracts\\MQuince.Repository.Contracts.csproj": {
+              "projectPath": "C:\\Users\\nikol\\OneDrive\\Desktop\\TestRepository\\MQuince\\MQuince.Repository.Contracts\\MQuince.Repository.Contracts.csproj"
             },
-            "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Contracts\\MQuince.Services.Contracts.csproj": {
-              "projectPath": "C:\\Users\\helen\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Contracts\\MQuince.Services.Contracts.csproj"
+            "C:\\Users\\nikol\\OneDrive\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Contracts\\MQuince.Services.Contracts.csproj": {
+              "projectPath": "C:\\Users\\nikol\\OneDrive\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Contracts\\MQuince.Services.Contracts.csproj"
             }
           }
         }
@@ -770,7 +774,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
