@@ -44,8 +44,8 @@ namespace MQuince.Services.Implementation
         }
 
         private Feedback CreateFeedbackFromDTO(FeedbackDTO feedback, Guid? id = null)
-            => id == null ? new Feedback(feedback.Comment, feedback.UserId, feedback.Anonymous, feedback.Publish)
-                          : new Feedback(id.Value, feedback.Comment, feedback.UserId, feedback.Anonymous, feedback.Publish);
+            => id == null ? new Feedback(feedback.Comment, feedback.UserId, feedback.Anonymous, feedback.Publish, feedback.Approved)
+                          : new Feedback(id.Value, feedback.Comment, feedback.UserId, feedback.Anonymous, feedback.Publish, feedback.Approved);
 
 
         private IdentifiableDTO<FeedbackDTO> CreateDTOFromFeedback(Feedback feedback)
@@ -65,5 +65,11 @@ namespace MQuince.Services.Implementation
 
             };
         }
+
+        public IEnumerable<IdentifiableDTO<FeedbackDTO>> GetByStatus(bool publish)
+            => _feedbackRepository.GetByStatus(publish).Select(c => CreateDTOFromFeedback(c));
+
+        public IEnumerable<IdentifiableDTO<FeedbackDTO>> GetByAllParams(bool publish, bool anonymous, bool approved)
+            => _feedbackRepository.GetByAllParams(publish, anonymous, approved).Select(c => CreateDTOFromFeedback(c));
     }
 }

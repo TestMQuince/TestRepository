@@ -38,5 +38,23 @@ namespace MQuince.WebAPI.Controllers
             return Ok(dto);
         }
 
+        /*[HttpGet("{publish?}")]
+        public ActionResult<IEnumerable<IdentifiableDTO<FeedbackDTO>>> GetByStatus(bool publish)
+        {
+            return Ok(_feedbackService.GetByStatus(publish));
+        }*/
+
+        [HttpGet("GetByStatus")]
+        public IEnumerable<IdentifiableDTO<FeedbackDTO>> GetByStatus(bool publish)
+        {
+            return _feedbackService.GetByStatus(publish);
+        }
+
+        [HttpGet("GetByAllParams")]
+        public IEnumerable<IdentifiableDTO<FeedbackDTO>> GetByAllParams(bool publish, bool anonymous, bool approved)
+        {
+            return _feedbackService.GetByAllParams(publish, anonymous, approved);
+        }
+
     }
 }

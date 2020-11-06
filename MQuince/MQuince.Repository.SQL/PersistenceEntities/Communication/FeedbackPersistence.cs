@@ -18,5 +18,6 @@ namespace MQuince.Repository.SQL.PersistenceEntities
         public Guid UserId { get; set; }
         public bool Anonymous { get; set; }
         public bool Publish { get; set; }
+        public bool Approved { get; set; }
     }
 }
