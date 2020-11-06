@@ -7,5 +7,6 @@ namespace MQuince.Repository.Contracts
 {
     public interface IFeedbackRepository : IRepository<Feedback>
     {
+        IEnumerable<Feedback> GetByStatus(bool publish);
     }
 }

@@ -65,5 +65,8 @@ namespace MQuince.Services.Implementation
 
             };
         }
+
+        public IEnumerable<IdentifiableDTO<FeedbackDTO>> GetByStatus(bool publish)
+            => _feedbackRepository.GetByStatus(publish).Select(c => CreateDTOFromFeedback(c));
     }
 }

@@ -8,7 +8,7 @@ namespace MQuince.Services.Contracts.Interfaces
 {
         public interface IFeedbackService : IService<FeedbackDTO, IdentifiableDTO<FeedbackDTO>>
         {
-
+            IEnumerable<IdentifiableDTO<FeedbackDTO>> GetByStatus(bool publish);
         }
     
 }
