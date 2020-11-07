@@ -14,17 +14,19 @@ namespace MQuince.Entities
         public Guid UserId { get; set; }
         public bool Anonymous { get; set; }
         public bool Publish { get; set; }
-        public Feedback(Guid id, string comment, Guid userId, bool anonymous, bool publish)
+        public bool Approved { get; set; }
+        public Feedback(Guid id, string comment, Guid userId, bool anonymous, bool publish, bool approved)
         {
             Id = id;
             Comment = comment;
             UserId = userId;
             Anonymous = anonymous;
             Publish = publish;
+            Approved = approved;
         }
 
-        public Feedback(string comment, Guid userId, bool anonymous, bool publish)
-            : this(Guid.NewGuid(), comment, userId, anonymous, publish)
+        public Feedback(string comment, Guid userId, bool anonymous, bool publish, bool approved)
+            : this(Guid.NewGuid(), comment, userId, anonymous, publish, approved)
         {
         }
 
