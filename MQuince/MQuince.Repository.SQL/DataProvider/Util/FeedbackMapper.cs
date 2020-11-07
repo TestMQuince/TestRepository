@@ -13,7 +13,7 @@ namespace MQuince.Repository.SQL.DataProvider.Util
         {
             if (feedback == null) return null;
 
-            return new Feedback(feedback.Id, feedback.Comment, feedback.UserId, feedback.Anonymous, feedback.Publish);
+            return new Feedback(feedback.Id, feedback.Comment, feedback.UserId, feedback.Anonymous, feedback.Publish, feedback.Approved);
 
         }
 

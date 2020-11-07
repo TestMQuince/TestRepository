@@ -11,5 +11,6 @@ namespace MQuince.Services.Contracts.DTO
         public Guid UserId { get; set; }
         public bool Anonymous { get; set; }
         public bool Publish { get; set; }
+        public bool Approved { get; set; }
     }
 }
