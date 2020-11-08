@@ -119,9 +119,8 @@
             <!-- Icon Divider-->
             <!-- Contact Section Form-->
             <div class="col-lg-8 mx-auto">
-                <select name="feedbackOption" id="feedbackOption" style="width:200px; margin-left: 520px; margin-top: 20px;">
-                    <option value="Published" v-model="status" v-on:click="statusChanged">Published</option>
-
+                <select name="feedbackOption" id="feedbackOption" v-model="status" v-on:change="statusChanged" style="width:200px; margin-left: 520px; margin-top: 20px;">
+                    <option value="Published">Published</option>
                     <option value="Pending">Pending</option>
                     <option value="Private">Private</option>
                 </select>
@@ -129,19 +128,17 @@
             <div class="commentBox" v-for="feedback in feedbacks">
                 <div class="col-lg-8 mx-auto">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
-                    <div class="short-info2">By Helena:</div>
+                    <div class="short-info2">By&nbsp<i>{{feedback.entityDTO.user}}</i></div>
                     <div class="apartment-name2">{{feedback.entityDTO.comment}}</div>
 
-                        <br />
-                        <div style=" float: right; margin-top: 60px; margin-right: -10%;"
-                             v-if="user != null && user.role !== 'Guest'">
-                            <div v-if="r.statusOfReservation === 'Created'">
-                                <button class="btn" @click="ApproveR(r)">
-                                    <i class="fa fa-check"></i>&nbsp&nbspApprove
-                                </button>
-                            </div>
+                    <br />
+                    <div style=" float: right; margin-top: 60px; margin-right: -10%;" v-if="feedback.entityDTO.publish == true && feedback.entityDTO.approved == false">
+                        <div>
+                            <button class="btn" @click="approve(feedback)">
+                                <i class="fa fa-check"></i>&nbsp&nbspApprove
+                            </button>
                         </div>
-
+                    </div>
                 </div>
             </div>
         </div>
@@ -168,6 +165,7 @@
     <!-- Core theme JS-->
     <script src="../axios.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="https://npmcdn.com/js-alert/dist/jsalert.min.js"></script>
     <script src="AdminFeedback.js"></script>
 </body>
 </html>

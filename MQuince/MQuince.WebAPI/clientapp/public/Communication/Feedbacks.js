@@ -8,10 +8,9 @@
 	},
 	created() {
 		axios
-			.get('/api/Feedback/GetByAllParams', {
+			.get('/api/Feedback/GetByStatus', {
 				params: {
 					publish: true,
-					anonymous: false,
 					approved: true
 				}
 			}).then(response => {

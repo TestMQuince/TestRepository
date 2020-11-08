@@ -38,22 +38,23 @@ namespace MQuince.WebAPI.Controllers
             return Ok(dto);
         }
 
-        /*[HttpGet("{publish?}")]
-        public ActionResult<IEnumerable<IdentifiableDTO<FeedbackDTO>>> GetByStatus(bool publish)
-        {
-            return Ok(_feedbackService.GetByStatus(publish));
-        }*/
-
         [HttpGet("GetByStatus")]
-        public IEnumerable<IdentifiableDTO<FeedbackDTO>> GetByStatus(bool publish)
+        public IEnumerable<IdentifiableDTO<FeedbackDTO>> GetByStatus(bool publish, bool approved)
         {
-            return _feedbackService.GetByStatus(publish);
+            return _feedbackService.GetByStatus(publish, approved);
         }
 
-        [HttpGet("GetByAllParams")]
-        public IEnumerable<IdentifiableDTO<FeedbackDTO>> GetByAllParams(bool publish, bool anonymous, bool approved)
+        [HttpGet("GetByParams")]
+        public IEnumerable<IdentifiableDTO<FeedbackDTO>> GetByParams(bool anonymous, bool approved)
         {
-            return _feedbackService.GetByAllParams(publish, anonymous, approved);
+            return _feedbackService.GetByParams(anonymous, approved);
+        }
+
+        [HttpPost("Update")]
+        public IActionResult Update(Feedback feedback)
+        {
+            _feedbackService.Update(new FeedbackDTO() { Comment = feedback.Comment, User = feedback.User, Anonymous = feedback.Anonymous, Publish = feedback.Publish, Approved = feedback.Approved }, feedback.Id);
+            return Ok();
         }
 
     }
