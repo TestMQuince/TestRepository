@@ -69,11 +69,19 @@ namespace MQuince.Repository.SQL.DataProvider
             }
         }
 
-        public IEnumerable<Feedback> GetByStatus(bool publish)
+        public IEnumerable<Feedback> GetByStatus(bool publish, bool approved)
         {
             using (MQuinceDbContext _context = new MQuinceDbContext())
             {
-                return FeedbackMapper.MapFeedbackPersistenceCollectionToFeedbackEntityCollection(_context.Feedbacks.Where(p => p.Publish == publish).ToList());
+                return FeedbackMapper.MapFeedbackPersistenceCollectionToFeedbackEntityCollection(_context.Feedbacks.Where(p => p.Publish == publish && p.Approved == approved).ToList());
+            }
+        }
+
+        public IEnumerable<Feedback> GetByParams(bool anonymous, bool approved)
+        {
+            using (MQuinceDbContext _context = new MQuinceDbContext())
+            {
+                return FeedbackMapper.MapFeedbackPersistenceCollectionToFeedbackEntityCollection(_context.Feedbacks.Where(p => p.Anonymous == anonymous && p.Approved == approved).ToList());
             }
         }
 
