@@ -10,8 +10,12 @@
 				axios
 					.get('/api/Feedback/GetByStatus', {
 						params: {
+<<<<<<< HEAD
 							publish: true,
 							approved: true
+=======
+							publish: true
+>>>>>>> develop
 						}
 					}).then(response => {
 						this.feedbacks = response.data
@@ -21,12 +25,17 @@
 				axios
 					.get('/api/Feedback/GetByStatus', {
 						params: {
+<<<<<<< HEAD
 							publish: true,
 							approved: false
+=======
+							publish: false
+>>>>>>> develop
 						}
 					}).then(response => {
 						this.feedbacks = response.data
 					})
+<<<<<<< HEAD
 			}
 			else if (this.status == "Private") {
 				axios
@@ -55,6 +64,10 @@
 
 				})
         }
+=======
+            }
+		}
+>>>>>>> develop
 	},
 	created() {
 		axios

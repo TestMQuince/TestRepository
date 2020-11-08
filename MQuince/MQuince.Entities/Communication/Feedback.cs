@@ -15,8 +15,11 @@ namespace MQuince.Entities
         public bool Anonymous { get; set; }
         public bool Publish { get; set; }
         public bool Approved { get; set; }
+<<<<<<< HEAD
 
         public Feedback() { }
+=======
+>>>>>>> develop
         public Feedback(Guid id, string comment, Guid userId, bool anonymous, bool publish, bool approved)
         {
             Id = id;
