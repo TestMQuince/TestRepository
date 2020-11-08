@@ -24,3 +24,12 @@ C:\Users\nikol\OneDrive\Desktop\TestRepository\MQuince\MQuince.Enums\obj\Debug\n
 C:\Users\nikol\OneDrive\Desktop\TestRepository\MQuince\MQuince.Enums\obj\Debug\netcoreapp3.1\MQuince.Enums.csproj.CoreCompileInputs.cache
 C:\Users\nikol\OneDrive\Desktop\TestRepository\MQuince\MQuince.Enums\obj\Debug\netcoreapp3.1\MQuince.Enums.dll
 C:\Users\nikol\OneDrive\Desktop\TestRepository\MQuince\MQuince.Enums\obj\Debug\netcoreapp3.1\MQuince.Enums.pdb
+C:\Users\zindo\Desktop\TestRepository\MQuince\MQuince.Enums\obj\Debug\netcoreapp3.1\MQuince.Enums.dll
+C:\Users\zindo\Desktop\TestRepository\MQuince\MQuince.Enums\obj\Debug\netcoreapp3.1\MQuince.Enums.pdb
+C:\Users\zindo\Desktop\TestRepository\MQuince\MQuince.Enums\bin\Debug\netcoreapp3.1\MQuince.Enums.deps.json
+C:\Users\zindo\Desktop\TestRepository\MQuince\MQuince.Enums\bin\Debug\netcoreapp3.1\MQuince.Enums.dll
+C:\Users\zindo\Desktop\TestRepository\MQuince\MQuince.Enums\bin\Debug\netcoreapp3.1\MQuince.Enums.pdb
+C:\Users\zindo\Desktop\TestRepository\MQuince\MQuince.Enums\obj\Debug\netcoreapp3.1\MQuince.Enums.csprojAssemblyReference.cache
+C:\Users\zindo\Desktop\TestRepository\MQuince\MQuince.Enums\obj\Debug\netcoreapp3.1\MQuince.Enums.AssemblyInfoInputs.cache
+C:\Users\zindo\Desktop\TestRepository\MQuince\MQuince.Enums\obj\Debug\netcoreapp3.1\MQuince.Enums.AssemblyInfo.cs
+C:\Users\zindo\Desktop\TestRepository\MQuince\MQuince.Enums\obj\Debug\netcoreapp3.1\MQuince.Enums.csproj.CoreCompileInputs.cache

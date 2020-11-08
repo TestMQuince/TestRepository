@@ -710,23 +710,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nikol\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\zindo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nikol\\OneDrive\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Implementation\\MQuince.Services.Implementation.csproj",
+      "projectUniqueName": "C:\\Users\\zindo\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Implementation\\MQuince.Services.Implementation.csproj",
       "projectName": "MQuince.Services.Implementation",
-      "projectPath": "C:\\Users\\nikol\\OneDrive\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Implementation\\MQuince.Services.Implementation.csproj",
-      "packagesPath": "C:\\Users\\nikol\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nikol\\OneDrive\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Implementation\\obj\\",
+      "projectPath": "C:\\Users\\zindo\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Implementation\\MQuince.Services.Implementation.csproj",
+      "packagesPath": "C:\\Users\\zindo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\zindo\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Implementation\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\nikol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\zindo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -739,14 +735,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\nikol\\OneDrive\\Desktop\\TestRepository\\MQuince\\MQuince.Entities\\MQuince.Entities.csproj": {
-              "projectPath": "C:\\Users\\nikol\\OneDrive\\Desktop\\TestRepository\\MQuince\\MQuince.Entities\\MQuince.Entities.csproj"
+            "C:\\Users\\zindo\\Desktop\\TestRepository\\MQuince\\MQuince.Entities\\MQuince.Entities.csproj": {
+              "projectPath": "C:\\Users\\zindo\\Desktop\\TestRepository\\MQuince\\MQuince.Entities\\MQuince.Entities.csproj"
             },
-            "C:\\Users\\nikol\\OneDrive\\Desktop\\TestRepository\\MQuince\\MQuince.Repository.Contracts\\MQuince.Repository.Contracts.csproj": {
-              "projectPath": "C:\\Users\\nikol\\OneDrive\\Desktop\\TestRepository\\MQuince\\MQuince.Repository.Contracts\\MQuince.Repository.Contracts.csproj"
+            "C:\\Users\\zindo\\Desktop\\TestRepository\\MQuince\\MQuince.Repository.Contracts\\MQuince.Repository.Contracts.csproj": {
+              "projectPath": "C:\\Users\\zindo\\Desktop\\TestRepository\\MQuince\\MQuince.Repository.Contracts\\MQuince.Repository.Contracts.csproj"
             },
-            "C:\\Users\\nikol\\OneDrive\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Contracts\\MQuince.Services.Contracts.csproj": {
-              "projectPath": "C:\\Users\\nikol\\OneDrive\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Contracts\\MQuince.Services.Contracts.csproj"
+            "C:\\Users\\zindo\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Contracts\\MQuince.Services.Contracts.csproj": {
+              "projectPath": "C:\\Users\\zindo\\Desktop\\TestRepository\\MQuince\\MQuince.Services.Contracts\\MQuince.Services.Contracts.csproj"
             }
           }
         }

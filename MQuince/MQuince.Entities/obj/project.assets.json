@@ -653,23 +653,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nikol\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\zindo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nikol\\OneDrive\\Desktop\\TestRepository\\MQuince\\MQuince.Entities\\MQuince.Entities.csproj",
+      "projectUniqueName": "C:\\Users\\zindo\\Desktop\\TestRepository\\MQuince\\MQuince.Entities\\MQuince.Entities.csproj",
       "projectName": "MQuince.Entities",
-      "projectPath": "C:\\Users\\nikol\\OneDrive\\Desktop\\TestRepository\\MQuince\\MQuince.Entities\\MQuince.Entities.csproj",
-      "packagesPath": "C:\\Users\\nikol\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nikol\\OneDrive\\Desktop\\TestRepository\\MQuince\\MQuince.Entities\\obj\\",
+      "projectPath": "C:\\Users\\zindo\\Desktop\\TestRepository\\MQuince\\MQuince.Entities\\MQuince.Entities.csproj",
+      "packagesPath": "C:\\Users\\zindo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\zindo\\Desktop\\TestRepository\\MQuince\\MQuince.Entities\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\nikol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\zindo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -682,8 +678,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\nikol\\OneDrive\\Desktop\\TestRepository\\MQuince\\MQuince.Enums\\MQuince.Enums.csproj": {
-              "projectPath": "C:\\Users\\nikol\\OneDrive\\Desktop\\TestRepository\\MQuince\\MQuince.Enums\\MQuince.Enums.csproj"
+            "C:\\Users\\zindo\\Desktop\\TestRepository\\MQuince\\MQuince.Enums\\MQuince.Enums.csproj": {
+              "projectPath": "C:\\Users\\zindo\\Desktop\\TestRepository\\MQuince\\MQuince.Enums\\MQuince.Enums.csproj"
             }
           }
         }
