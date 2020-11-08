@@ -53,7 +53,7 @@ namespace MQuince.WebAPI.Controllers
         [HttpPost("Update")]
         public IActionResult Update(Feedback feedback)
         {
-            _feedbackService.Update(new FeedbackDTO() { Comment = feedback.Comment, UserId = feedback.UserId, Anonymous = feedback.Anonymous, Publish = feedback.Publish, Approved = feedback.Approved }, feedback.Id);
+            _feedbackService.Update(new FeedbackDTO() { Comment = feedback.Comment, User = feedback.User, Anonymous = feedback.Anonymous, Publish = feedback.Publish, Approved = feedback.Approved }, feedback.Id);
             return Ok();
         }
 

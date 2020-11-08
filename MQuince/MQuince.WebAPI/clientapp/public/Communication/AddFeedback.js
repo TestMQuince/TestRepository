@@ -7,13 +7,18 @@
 	},
 	methods: {
 		submit() {
+			var name = "Anonymous"
+			if (this.Anonymous == false)
+				name = "Petar Petrovic"
+			console.log(name)
 			axios
 				.post("/api/Feedback", {
 					Comment: this.Comment,
 					Anonymous: this.Anonymous,
-					Publish: this.Publish
+					Publish: this.Publish,
+					User: name
 				}).then(response => {
-					console.log("cao")
+					JSAlert.alert("Success!")
 				})
         }
 	}

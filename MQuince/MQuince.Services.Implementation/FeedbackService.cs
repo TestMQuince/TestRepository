@@ -44,8 +44,8 @@ namespace MQuince.Services.Implementation
         }
 
         private Feedback CreateFeedbackFromDTO(FeedbackDTO feedback, Guid? id = null)
-            => id == null ? new Feedback(feedback.Comment, feedback.UserId, feedback.Anonymous, feedback.Publish, feedback.Approved)
-                          : new Feedback(id.Value, feedback.Comment, feedback.UserId, feedback.Anonymous, feedback.Publish, feedback.Approved);
+            => id == null ? new Feedback(feedback.Comment, feedback.User, feedback.Anonymous, feedback.Publish, feedback.Approved)
+                          : new Feedback(id.Value, feedback.Comment, feedback.User, feedback.Anonymous, feedback.Publish, feedback.Approved);
 
 
         private IdentifiableDTO<FeedbackDTO> CreateDTOFromFeedback(Feedback feedback)
@@ -58,7 +58,7 @@ namespace MQuince.Services.Implementation
                 EntityDTO = new FeedbackDTO()
                 {
                     Comment = feedback.Comment,
-                    UserId = feedback.UserId,
+                    User = feedback.User,
                     Anonymous = feedback.Anonymous,
                     Publish = feedback.Publish,
                     Approved = feedback.Approved
