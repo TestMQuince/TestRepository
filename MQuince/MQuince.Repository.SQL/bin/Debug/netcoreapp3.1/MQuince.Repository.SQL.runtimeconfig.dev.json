@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "C:\\Users\\zindo\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\zindo\\.nuget\\packages"
-    ]
-  }
-}
