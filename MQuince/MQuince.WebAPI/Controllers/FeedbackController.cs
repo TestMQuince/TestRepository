@@ -27,15 +27,14 @@ namespace MQuince.WebAPI.Controllers
             this._feedbackService = feedbackService;
         }
 
-        [HttpPost]      
+        [HttpPost]
         public IActionResult Add(FeedbackDTO dto)
         {
-            if (dto.Comment.Length <= 0)
+            if (ModelState.IsValid)
             {
-                return BadRequest();   
+                _feedbackService.Create(dto);
             }
-            _feedbackService.Create(dto);
-            return Ok(dto);
+            return Ok();
         }
 
         [HttpGet("GetByStatus")]
