@@ -47,6 +47,12 @@ namespace MQuince.WebAPI
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors(builder =>
+                builder.AllowAnyHeader()
+                .AllowAnyOrigin()
+                .AllowAnyMethod());
+
+            app.UseHttpsRedirection();
             app.UseRouting();
             app.UseSpaStaticFiles();
             app.UseAuthorization();

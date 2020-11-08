@@ -113,34 +113,20 @@
 
     <!-- Contact Section-->
     <section class="page-section" id="contact">
-        <div class="container" id="adminFeedback">
+        <div class="container" id="feedbacks">
             <!-- Contact Section Heading-->
             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Your feedbacks</h2>
             <!-- Icon Divider-->
             <!-- Contact Section Form-->
-            <div class="col-lg-8 mx-auto">
-                <select name="feedbackOption" id="feedbackOption" v-model="status" v-on:change="statusChanged" style="width:200px; margin-left: 520px; margin-top: 20px;">
-                    <option value="Published">Published</option>
-                    <option value="Pending">Pending</option>
-                    <option value="Private">Private</option>
-                </select>
-            </div>
             <div class="commentBox" v-for="feedback in feedbacks">
                 <div class="col-lg-8 mx-auto">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
                     <div class="short-info2">By Helena:</div>
                     <div class="apartment-name2">{{feedback.entityDTO.comment}}</div>
-
-                        <br />
-                        <div style=" float: right; margin-top: 60px; margin-right: -10%;" v-if="feedback.entityDTO.publish == true && feedback.entityDTO.approved == false">
-                            <div>
-                                <button class="btn" @click="approve(feedback)">
-                                    <i class="fa fa-check"></i>&nbsp&nbspApprove
-                                </button>
-                            </div>
-                        </div>
+                    <br />
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <!-- Footer-->
@@ -165,6 +151,6 @@
     <!-- Core theme JS-->
     <script src="../axios.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="AdminFeedback.js"></script>
+    <script src="Feedbacks.js"></script>
 </body>
 </html>
