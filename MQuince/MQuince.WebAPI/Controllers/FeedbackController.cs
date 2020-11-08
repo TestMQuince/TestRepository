@@ -53,18 +53,8 @@ namespace MQuince.WebAPI.Controllers
         [HttpPost("Update")]
         public IActionResult Update(Feedback feedback)
         {
-<<<<<<< HEAD
             _feedbackService.Update(new FeedbackDTO() { Comment = feedback.Comment, UserId = feedback.UserId, Anonymous = feedback.Anonymous, Publish = feedback.Publish, Approved = feedback.Approved }, feedback.Id);
             return Ok();
-=======
-            return _feedbackService.GetByStatus(publish);
-        }
-
-        [HttpGet("GetByAllParams")]
-        public IEnumerable<IdentifiableDTO<FeedbackDTO>> GetByAllParams(bool publish, bool anonymous, bool approved)
-        {
-            return _feedbackService.GetByAllParams(publish, anonymous, approved);
->>>>>>> develop
         }
 
     }

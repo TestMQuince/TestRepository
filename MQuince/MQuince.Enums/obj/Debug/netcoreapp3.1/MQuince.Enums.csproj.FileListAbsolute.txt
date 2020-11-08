@@ -24,3 +24,4 @@ C:\Users\nikol\OneDrive\Desktop\TestRepository\MQuince\MQuince.Enums\obj\Debug\n
 C:\Users\nikol\OneDrive\Desktop\TestRepository\MQuince\MQuince.Enums\obj\Debug\netcoreapp3.1\MQuince.Enums.csproj.CoreCompileInputs.cache
 C:\Users\nikol\OneDrive\Desktop\TestRepository\MQuince\MQuince.Enums\obj\Debug\netcoreapp3.1\MQuince.Enums.dll
 C:\Users\nikol\OneDrive\Desktop\TestRepository\MQuince\MQuince.Enums\obj\Debug\netcoreapp3.1\MQuince.Enums.pdb
+C:\Users\nikol\OneDrive\Desktop\TestRepository\MQuince\MQuince.Enums\obj\Debug\netcoreapp3.1\MQuince.Enums.csprojAssemblyReference.cache
