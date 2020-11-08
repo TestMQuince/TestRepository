@@ -53,7 +53,7 @@
 						Approved: true,
 						Comment: fdb.entityDTO.comment,
 						Publish: fdb.entityDTO.publish,
-						UserId: fdb.entityDTO.UserId
+						User: fdb.entityDTO.user
 					})
 					.then(response => {
 						for (i = 0; i < self.feedbacks.length; i++) {
