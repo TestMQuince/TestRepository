@@ -43,11 +43,21 @@ namespace MQuince.Services.Implementation
 
         }
 
+        /// <summary>
+        /// Method for create feedbacks from DTO
+        /// </summary>
+        /// <param name="feedback"></param>
+        /// <param name="id"></param>
+        /// <returns></returns>
         private Feedback CreateFeedbackFromDTO(FeedbackDTO feedback, Guid? id = null)
             => id == null ? new Feedback(feedback.Comment, feedback.User, feedback.Anonymous, feedback.Publish, feedback.Approved)
                           : new Feedback(id.Value, feedback.Comment, feedback.User, feedback.Anonymous, feedback.Publish, feedback.Approved);
 
-
+        /// <summary>
+        /// Mathod for sreate DTO from feedbacks
+        /// </summary>
+        /// <param name="feedback"></param>
+        /// <returns></returns>
         private IdentifiableDTO<FeedbackDTO> CreateDTOFromFeedback(Feedback feedback)
         {
             if (feedback == null) return null;

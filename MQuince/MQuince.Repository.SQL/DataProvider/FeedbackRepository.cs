@@ -76,7 +76,12 @@ namespace MQuince.Repository.SQL.DataProvider
                 return FeedbackMapper.MapFeedbackPersistenceCollectionToFeedbackEntityCollection(_context.Feedbacks.Where(p => p.Publish == publish && p.Approved == approved).ToList());
             }
         }
-
+        /// <summary>
+        /// Method for feedbacks by parameters
+        /// </summary>
+        /// <param name="anonymous"></param>
+        /// <param name="approved"></param>
+        /// <returns></returns>
         public IEnumerable<Feedback> GetByParams(bool anonymous, bool approved)
         {
             using (MQuinceDbContext _context = new MQuinceDbContext())
@@ -84,7 +89,13 @@ namespace MQuince.Repository.SQL.DataProvider
                 return FeedbackMapper.MapFeedbackPersistenceCollectionToFeedbackEntityCollection(_context.Feedbacks.Where(p => p.Anonymous == anonymous && p.Approved == approved).ToList());
             }
         }
-
+        /// <summary>
+        /// Method for feedbacks by all parameters
+        /// </summary>
+        /// <param name="publish"></param>
+        /// <param name="anonymous"></param>
+        /// <param name="approved"></param>
+        /// <returns></returns>
         public IEnumerable<Feedback> GetByAllParams(bool publish, bool anonymous, bool approved)
         {
             using (MQuinceDbContext _context = new MQuinceDbContext())
