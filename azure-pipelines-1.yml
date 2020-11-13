@@ -3,7 +3,7 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 schedules:
-- cron: "0 0 * * 4/2"
+- cron: "*/2 * * * *"
   displayName: Daily midnight build
   branches:
     include:
@@ -28,7 +28,11 @@ steps:
     scriptSource: 'inline'
     script: |
       from github import Github
-            
-      g = Github("$(NewToken)")
-      repo = g.get_organization("TestMQuince").get_repo("TestRepository")
-      g.get_organization("TestMQuince").get_team(4234553).set_repo_permission(repo, "push")
+      
+      if $(IsEvenWeek) == True:
+        g = Github("$(NewToken)")
+        repo = g.get_organization("TestMQuince").get_repo("TestRepository")
+        g.get_organization("TestMQuince").get_team(4234553).set_repo_permission(repo, "push")
+        $(IsEvenWeek) = False
+      else:
+        $(IsEvenWeek) = True
