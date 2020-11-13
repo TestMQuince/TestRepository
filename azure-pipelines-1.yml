@@ -29,10 +29,10 @@ steps:
     script: |
       from github import Github
       
-      if $(IsEvenWeek) == "True":
+      if $(IsEvenWeek):
         g = Github("$(NewToken)")
         repo = g.get_organization("TestMQuince").get_repo("TestRepository")
         g.get_organization("TestMQuince").get_team(4234553).set_repo_permission(repo, "push")
-        $(IsEvenWeek) = False
+        $(IsEvenWeek) = not $(IsEvenWeek)
       else:
-        $(IsEvenWeek) = True
+        $(IsEvenWeek) = not $(IsEvenWeek)
