@@ -43,7 +43,7 @@ steps:
     targetType: 'inline'
     script: |
       # Write your PowerShell commands here.
-      if ("$(IsEvenWeek)" == "True"){
+      if ("$(IsEvenWeek)" -eq "True"){
       Write-Host "Hello World"
       } else {
       Write-Host "Hello World else"
