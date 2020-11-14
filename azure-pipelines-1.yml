@@ -38,3 +38,13 @@ steps:
         $(IsEvenWeek) = True
       
       print($(IsEvenWeek))
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your PowerShell commands here.
+      if ($(IsEvenWeek) == True){
+      Write-Host "Hello World"
+      } else {
+      Write-Host "Hello World else"
+      }
