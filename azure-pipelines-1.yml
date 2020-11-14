@@ -29,7 +29,7 @@ steps:
     script: |
       from github import Github
       
-      print(${{variables.IsEven}})
+      print(${variables.IsEven})
       if "$(IsEven)" == "True":
         g = Github("$(NewToken)")
         repo = g.get_organization("TestMQuince").get_repo("TestRepository")
@@ -40,7 +40,7 @@ steps:
     targetType: 'inline'
     script: |
       # Write your PowerShell commands here.
-      if ("$(IsEven)" -eq "True"){
+      if ("${variables.IsEven}" -eq "True"){
       Write-Host "##vso[task.setvariable variable=IsEven;]False"
       } else {
       Write-Host "##vso[task.setvariable variable=IsEven;]True"
