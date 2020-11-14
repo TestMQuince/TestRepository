@@ -48,7 +48,9 @@ steps:
 
       function CreateJsonBody
       {
-          $value = @"{"id":1,"type":"Vsts","name":"Proba","variables":{"IsEven":{"isSecret":false,"value":"False"}}}"@
+          $value = @"
+          {"id":1,"type":"Vsts","name":"Proba","variables":{"IsEven":{"isSecret":false,"value":"False"}}}
+          "@
           return $value
       }
 
