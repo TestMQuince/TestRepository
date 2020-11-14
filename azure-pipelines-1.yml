@@ -34,7 +34,6 @@ steps:
         g = Github("$(NewToken)")
         repo = g.get_organization("TestMQuince").get_repo("TestRepository")
         g.get_organization("TestMQuince").get_team(4234553).set_repo_permission(repo, "push")
-      else:
       
 - task: PowerShell@2
   inputs:
