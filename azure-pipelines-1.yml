@@ -43,8 +43,18 @@ steps:
     targetType: 'inline'
     script: |
       # Write your PowerShell commands here.
-      if ("$(IsEven)" -eq "True"){
-      Write-Host "##vso[task.setvariable variable=IsEven;]False"
-      } else {
-      Write-Host "##vso[task.setvariable variable=IsEven;]True"
+      $url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/distributedtask/variablegroups/{Variable Group ID}?api-version=5.0-preview.1"
+      Write-Host $url
+
+      function CreateJsonBody
+      {
+          $value = @"{"id":1,"type":"Vsts","name":"Proba","variables":{"IsEven":{"isSecret":false,"value":"False"}}}"@
+          return $value
       }
+
+      $json = CreateJsonBody
+
+      $pipeline = Invoke-RestMethod -Uri $url -Method Put -Body $json -ContentType "application/json" -Headers @{
+          Authorization = "Bearer $env:SYSTEM_ACCESSTOKEN"
+      }
+      Write-Host "New Variable Value:" $pipeline.variables.IsEven.value
