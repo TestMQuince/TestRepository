@@ -43,7 +43,7 @@ steps:
     targetType: 'inline'
     script: |
       # Write your PowerShell commands here.
-      if ("$(Proba.IsEven)" -eq "True"){
+      if ("$(IsEven)" -eq "True"){
       Write-Host "##vso[task.setvariable variable=IsEven;]False"
       } else {
       Write-Host "##vso[task.setvariable variable=IsEven;]True"
