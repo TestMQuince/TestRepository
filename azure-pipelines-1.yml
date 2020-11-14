@@ -29,22 +29,20 @@ steps:
     script: |
       from github import Github
       
+      print($(IsEvenWeek))
       if "$(IsEvenWeek)" == "True":
         g = Github("$(NewToken)")
         repo = g.get_organization("TestMQuince").get_repo("TestRepository")
         g.get_organization("TestMQuince").get_team(4234553).set_repo_permission(repo, "push")
-        $(IsEvenWeek) = False
       else:
-        $(IsEvenWeek) = True
       
-      print($(IsEvenWeek))
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
     script: |
       # Write your PowerShell commands here.
       if ("$(IsEvenWeek)" -eq "True"){
-      Write-Host "Hello World"
+      Write-Host "##vso[task.setvariable variable=IsEvenWeek;]False"
       } else {
-      Write-Host "Hello World else"
+      Write-Host "##vso[task.setvariable variable=IsEvenWeek;]True"
       }
