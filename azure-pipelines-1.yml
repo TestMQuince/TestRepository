@@ -14,6 +14,9 @@ trigger: none
 pool:
   vmImage: 'ubuntu-latest'
 
+variables:
+  - group: Proba
+
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
@@ -29,8 +32,8 @@ steps:
     script: |
       from github import Github
       
-      print(${{variables.IsEven}})
-      if "${{variables.IsEven}}" == "True":
+      print($(IsEven))
+      if "$(IsEven)" == "True":
         g = Github("$(NewToken)")
         repo = g.get_organization("TestMQuince").get_repo("TestRepository")
         g.get_organization("TestMQuince").get_team(4234553).set_repo_permission(repo, "push")
