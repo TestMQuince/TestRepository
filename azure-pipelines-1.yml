@@ -29,7 +29,7 @@ steps:
     script: |
       from github import Github
       
-      if $(IsEvenWeek):
+      if "$(IsEvenWeek)" == "True":
         g = Github("$(NewToken)")
         repo = g.get_organization("TestMQuince").get_repo("TestRepository")
         g.get_organization("TestMQuince").get_team(4234553).set_repo_permission(repo, "push")
@@ -43,7 +43,7 @@ steps:
     targetType: 'inline'
     script: |
       # Write your PowerShell commands here.
-      if ($(IsEvenWeek) == True){
+      if ("$(IsEvenWeek)" == "True"){
       Write-Host "Hello World"
       } else {
       Write-Host "Hello World else"
