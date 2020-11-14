@@ -29,7 +29,7 @@ steps:
     script: |
       from github import Github
       
-      print($(IsEven))
+      print(${{variables.IsEven}})
       if "$(IsEven)" == "True":
         g = Github("$(NewToken)")
         repo = g.get_organization("TestMQuince").get_repo("TestRepository")
