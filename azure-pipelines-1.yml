@@ -60,6 +60,7 @@ steps:
       $encodedCreds = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes($pair))
 
       $basicAuthValue = "Basic $encodedCreds"
+      $json = CreateJsonBody
 
       $Headers = @{
           Authorization = $basicAuthValue
