@@ -52,12 +52,18 @@ steps:
           return $value
       }
 
-      $json = CreateJsonBody
-      $credPair = "$():$($env:SYSTEM_ACCESSTOKEN)"
-      
-      $encodedCredentials = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes($credPair))
-      
-      $headers = @{ Authorization = "Basic $encodedCredentials" }
+      $user = ''
+      $pass = '$env:SYSTEM_ACCESSTOKEN)'
 
-      $pipeline = Invoke-RestMethod -Uri $url -Method Put -Body $json -ContentType "application/json" -Headers $headers
+      $pair = "$($user):$($pass)"
+
+      $encodedCreds = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes($pair))
+
+      $basicAuthValue = "Basic $encodedCreds"
+
+      $Headers = @{
+          Authorization = $basicAuthValue
+      }
+
+      $pipeline = Invoke-RestMethod -Uri $url -Method Put -Body $json -ContentType "application/json" -Headers $Headers
       Write-Host "New Variable Value:" $pipeline.variables.IsEven.value
