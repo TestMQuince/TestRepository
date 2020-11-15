@@ -48,7 +48,7 @@ steps:
 
       function CreateJsonBody
       {
-          if "$(IsEven)" -eq "True" {
+          if ("$(IsEven)" -eq "True") {
             $value = '{"id":1,"type":"Vsts","name":"Proba","variables":{"IsEven":{"isSecret":false,"value":"False"}}}'
           } else {
             $value = '{"id":1,"type":"Vsts","name":"Proba","variables":{"IsEven":{"isSecret":false,"value":"True"}}}'
