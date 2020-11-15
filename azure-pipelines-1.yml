@@ -57,8 +57,8 @@ steps:
       }
 
       $user = ''
-      $pass = '$(tokencic)'
-      Write-Host "$(tokencic)"
+      $pass = '$env:SYSTEM_ACCESSTOKEN'
+      Write-Host "$env:SYSTEM_ACCESSTOKEN"
       $pair = "$($user):$($pass)"
 
       $encodedCreds = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes($pair))
