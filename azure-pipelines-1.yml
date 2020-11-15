@@ -53,7 +53,7 @@ steps:
       }
 
       $json = CreateJsonBody
-      $credPair = "$(\`"\`"):$($env:SYSTEM_ACCESSTOKEN)"
+      $credPair = "$():$($env:SYSTEM_ACCESSTOKEN)"
       
       $encodedCredentials = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes($credPair))
       
