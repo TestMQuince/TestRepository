@@ -53,8 +53,11 @@ steps:
       }
 
       $json = CreateJsonBody
+      $credPair = "$(""):$($env:SYSTEM_ACCESSTOKEN)"
+      
+      $encodedCredentials = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes($credPair))
+      
+      $headers = @{ Authorization = "Basic $encodedCredentials" }
 
-      $pipeline = Invoke-RestMethod -Uri $url -Method Put -Body $json -ContentType "application/json" -Headers @{
-          Authorization = "Bearer $env:SYSTEM_ACCESSTOKEN"
-      }
+      $pipeline = Invoke-RestMethod -Uri $url -Method Put -Body $json -ContentType "application/json" -Headers $headers
       Write-Host "New Variable Value:" $pipeline.variables.IsEven.value
