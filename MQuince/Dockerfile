@@ -22,7 +22,7 @@ FROM build AS test
 LABEL test=true
 RUN dotnet test -c Release --results-directory /testresults --logger "trx;LogFileName=test_results.trx" MQuince.Services.Tests/MQuince.Services.Tests.csproj
 
-
+FROM build AS publish
 WORKDIR /app/MQuince.Repository.SQL
 WORKDIR /app
 RUN dotnet publish MQuince.WebAPI/MQuince.WebAPI.csproj -c Release -o out
