@@ -1,5 +1,6 @@
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
 WORKDIR /app
+LABEL test=true  
 
 COPY MQuince.WebAPI/MQuince.WebAPI.csproj MQuince.WebAPI/
 COPY MQuince.Services.Contracts/MQuince.Services.Contracts.csproj MQuince.Services.Contracts/
