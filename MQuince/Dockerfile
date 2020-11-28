@@ -17,7 +17,7 @@ RUN dotnet restore MQuince.WebAPI/MQuince.WebAPI.csproj
 COPY . .
 WORKDIR /app/MQuince.Repository.SQL
 WORKDIR /app
-RUN dotnet MQuince.Services.Tests/MQuince.Services.Tests.csproj
+RUN dotnet dotnet test -c Release --results-directory /testresults --logger "trx;LogFileName=test_results.trx" MQuince.Services.Tests/MQuince.Services.Tests.csproj
 RUN dotnet publish MQuince.WebAPI/MQuince.WebAPI.csproj -c Release -o out
 
 
