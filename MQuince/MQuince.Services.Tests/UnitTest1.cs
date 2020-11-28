@@ -8,7 +8,7 @@ namespace MQuince.Services.Tests
         [Fact]
         public void Test1()
         {
-            Assert.False(false);
+            Assert.False(true);
         }
 
         [Fact]
