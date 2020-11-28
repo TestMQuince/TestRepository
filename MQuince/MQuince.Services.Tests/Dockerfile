@@ -2,15 +2,15 @@ FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
 WORKDIR /app
 LABEL test=true  
 
-COPY MQuince.WebAPI/MQuince.WebAPI.csproj MQuince.WebAPI/
-COPY MQuince.Services.Contracts/MQuince.Services.Contracts.csproj MQuince.Services.Contracts/
-COPY MQuince.Entities/MQuince.Entities.csproj MQuince.Entities/
-COPY MQuince.Enums/MQuince.Enums.csproj MQuince.Enums/
-COPY MQuince.Application/MQuince.Application.csproj MQuince.Application/
-COPY MQuince.Repository.Contracts/MQuince.Repository.Contracts.csproj MQuince.Repository.Contracts/
-COPY MQuince.Services.Implementation/MQuince.Services.Implementation.csproj MQuince.Services.Implementation/
-COPY MQuince.Repository.SQL/MQuince.Repository.SQL.csproj MQuince.Repository.SQL/
-COPY MQuince.Services.Tests/MQuince.Services.Tests.csproj MQuince.Services.Tests/
+COPY ./MQuince.WebAPI/MQuince.WebAPI.csproj MQuince.WebAPI/
+COPY ./MQuince.Services.Contracts/MQuince.Services.Contracts.csproj MQuince.Services.Contracts/
+COPY ./MQuince.Entities/MQuince.Entities.csproj MQuince.Entities/
+COPY ./MQuince.Enums/MQuince.Enums.csproj MQuince.Enums/
+COPY ./MQuince.Application/MQuince.Application.csproj MQuince.Application/
+COPY ./MQuince.Repository.Contracts/MQuince.Repository.Contracts.csproj MQuince.Repository.Contracts/
+COPY ./MQuince.Services.Implementation/MQuince.Services.Implementation.csproj MQuince.Services.Implementation/
+COPY ./MQuince.Repository.SQL/MQuince.Repository.SQL.csproj MQuince.Repository.SQL/
+COPY ./MQuince.Services.Tests/MQuince.Services.Tests.csproj MQuince.Services.Tests/
 
 
 RUN dotnet restore MQuince.WebAPI/MQuince.WebAPI.csproj
