@@ -17,7 +17,6 @@ RUN dotnet restore MQuince.WebAPI/MQuince.WebAPI.csproj
 
 COPY . .
 
-
 FROM build AS test
 LABEL test=true
 RUN dotnet test -c Release --results-directory /testresults --logger "trx;LogFileName=test_results.trx" MQuince.Services.Tests/MQuince.Services.Tests.csproj
@@ -35,5 +34,5 @@ USER defaultuser
 WORKDIR /app
 ENV ASPNETCORE_URLS http://*:44359
 EXPOSE 44359
-COPY --from=build /app/out .
+COPY --from=publish /app/out .
 ENTRYPOINT ["dotnet", "MQuince.WebAPI.dll"]
