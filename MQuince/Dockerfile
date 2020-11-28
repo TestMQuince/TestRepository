@@ -12,15 +12,21 @@ COPY MQuince.Services.Implementation/MQuince.Services.Implementation.csproj MQui
 COPY MQuince.Repository.SQL/MQuince.Repository.SQL.csproj MQuince.Repository.SQL/
 COPY MQuince.Services.Tests/MQuince.Services.Tests.csproj MQuince.Services.Tests/
 
-RUN dotnet dotnet test -c Release --results-directory /testresults --logger "trx;LogFileName=test_results.trx" MQuince.Services.Tests/MQuince.Services.Tests.csproj
-
 
 RUN dotnet restore MQuince.WebAPI/MQuince.WebAPI.csproj
 
 COPY . .
+
+
+FROM build AS test
+LABEL test=true
+RUN dotnet dotnet test -c Release --results-directory /testresults --logger "trx;LogFileName=test_results.trx" MQuince.Services.Tests/MQuince.Services.Tests.csproj
+
+
 WORKDIR /app/MQuince.Repository.SQL
 WORKDIR /app
 RUN dotnet publish MQuince.WebAPI/MQuince.WebAPI.csproj -c Release -o out
+
 
 
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS runtime
